@@ -6,7 +6,36 @@ using System.Threading.Tasks;
 
 namespace KGA_OOPConsoleProject.Scenes
 {
-    internal class Stage1
+    public class Stage1 : Scene
     {
+        public Stage1(Launcher launcher) : base(launcher)
+        {
+
+        }
+
+        public override void Start()
+        {
+
+        }
+        public override void Render()
+        {
+
+        }
+        public override void Input()
+        {
+
+        }
+        public override void Update()
+        {
+
+        }
+        public override void Interaction()
+        {
+
+        }
+        public override void End()
+        {
+
+        }
     }
 }

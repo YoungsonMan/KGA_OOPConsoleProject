@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KGA_OOPConsoleProject.Scenes
 {
-    public class TitleScene : Scenes
+    public class TitleScene : Scene
     {
         public TitleScene(Launcher launcher) : base(launcher) 
         {
@@ -15,6 +15,18 @@ namespace KGA_OOPConsoleProject.Scenes
 
         public override void Start()
         {
+            Console.Clear();
+            Console.WriteLine($"┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"); 
+            Console.WriteLine($"┃ ♠ ♥ ♣ ◆ ♠ ♥ ♣ ◆ ♠ ♥ ♣ ◆ ♠ ♥ ♣ ◆ ┃");
+            Console.WriteLine($"┃                                 ┃");
+            Console.WriteLine($"┃      로스트아크 쿠크세이튼      ┃"); 
+            Console.WriteLine($"┃           2관문 미로            ┃");
+            Console.WriteLine($"┃                                 ┃");
+            Console.WriteLine($"┃ ◆ ♣ ♥ ♠ ◆ ♣ ♥ ♠ ◆ ♣ ♥ ♠ ◆ ♣ ♥ ♠ ┃");
+            Console.WriteLine($"┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
+            Console.WriteLine();
+            Console.WriteLine("    계속하려면 아무키나 누르세요    ");
+            Console.ReadKey();
 
         }
         public override void Render()

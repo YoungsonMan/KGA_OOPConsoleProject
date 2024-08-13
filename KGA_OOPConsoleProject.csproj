@@ -9,9 +9,7 @@
 
   <ItemGroup>
     <Folder Include="Functions\" />
-    <Folder Include="Printer\" />
     <Folder Include="Objects\" />
-    <Folder Include="Scenes\" />
   </ItemGroup>
 
 </Project>

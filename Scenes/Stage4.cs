@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KGA_OOPConsoleProject.Scenes
 {
-    public class Stage4 : Scenes
+    public class Stage4 : Scene
     {
         public Stage4(Launcher launcher) : base(launcher)
         {
