@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KGA_OOPConsoleProject", "KGA_OOPConsoleProject.csproj", "{497F1110-FD37-4C59-A4A6-DFF657DD5B55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{497F1110-FD37-4C59-A4A6-DFF657DD5B55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{497F1110-FD37-4C59-A4A6-DFF657DD5B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{497F1110-FD37-4C59-A4A6-DFF657DD5B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{497F1110-FD37-4C59-A4A6-DFF657DD5B55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDF02C43-EE2A-447F-B088-3CFFFCDA0908}
+	EndGlobalSection
+EndGlobal
