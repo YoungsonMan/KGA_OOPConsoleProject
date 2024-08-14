@@ -10,6 +10,10 @@ namespace KGA_OOPConsoleProject
     {
         Title,
         Information,
+        Stage1,
+        Stage2,
+        Stage3,
+        Stage4,
         Render,
         Map,
         End,

@@ -50,12 +50,20 @@ namespace KGA_OOPConsoleProject
 
             scenes = new Scene[(int)SceneType.Size];
             scenes[(int)SceneType.Title]= new TitleScene(this);
+            scenes[(int)SceneType.Information] = new Information(this);
+            scenes[(int)SceneType.Stage1] = new Stage1(this);
+            scenes[(int)SceneType.Stage2] = new Stage2(this);
+            scenes[(int)SceneType.Stage3] = new Stage3(this);
+            scenes[(int)SceneType.Stage4] = new Stage4(this);
+
+
 
             currentScene = scenes[(int)SceneType.Title];
             currentScene.Enter();
             
             
         }
+
         private void Update()
         {
             currentScene.Update();

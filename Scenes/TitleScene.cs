@@ -1,23 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace KGA_OOPConsoleProject.Scenes
+﻿namespace KGA_OOPConsoleProject.Scenes
 {
     public class TitleScene : Scene
     {
-        public TitleScene(Game game) : base(game) 
+        public TitleScene(Game game) : base(game)
         {
-        
+
         }
 
         public override void Enter()
         {
-            
-            
-            
+
+
+
 
         }
         public override void Render()
@@ -32,10 +26,11 @@ namespace KGA_OOPConsoleProject.Scenes
             Console.WriteLine($"┃ ◆ ♣ ♥ ♠ ◆ ♣ ♥ ♠ ◆ ♣ ♥ ♠ ◆ ♣ ♥ ♠ ┃");
             Console.WriteLine($"┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
             Console.WriteLine();
+
         }
         public override void Input()
         {
-            Console.WriteLine("    계속하려면 아무키나 누르세요    ");
+            Console.WriteLine("   계속하려면 아무키나 누르세요    ");
             Console.ReadKey();
         }
         public override void Update()
