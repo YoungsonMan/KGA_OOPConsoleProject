@@ -48,26 +48,26 @@ namespace KGA_OOPConsoleProject.Scenes
                 Console.WriteLine(str);
             }
 
-        //    Console.Clear();
-        //    Console.WriteLine($"┏━━━━━━━━━━주어진  문양━━━━━━━━━━━┓");
-        //    Console.WriteLine($"┃                                 ┃");
-        //    Console.WriteLine($"┃                ♥                ┃");
-        //    Console.WriteLine($"┃                                 ┃");
-        //    Console.WriteLine($"┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
-        //    Console.WriteLine();
-        //    Console.WriteLine();
-        //    Console.WriteLine($"┏━━━━━━━━━━플레이  방법━━━━━━━━━━━┓");
-        //    Console.WriteLine($"┃                                 ┃"); 
-        //    Console.WriteLine($"┃  [방향키]                       ┃");
-        //    Console.WriteLine($"┃     ↑                           ┃");
-        //    Console.WriteLine($"┃   ←   →     :  이동             ┃");
-        //    Console.WriteLine($"┃     ↓                           ┃");
-        //    Console.WriteLine($"┃                                 ┃");
-        //    Console.WriteLine($"┃ 굴러오는 방해물을 피해          ┃");
-        //    Console.WriteLine($"┃ 주어진 문양을 먹고 탈출하세요   ┃");
-        //    Console.WriteLine($"┃                                 ┃"); 
-        //    Console.WriteLine($"┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
-        //    Console.WriteLine();
+            Console.Clear();
+            Console.WriteLine($"┏━━━━━━━━━━주어진  문양━━━━━━━━━━━┓");
+            Console.WriteLine($"┃                                 ┃");
+            Console.WriteLine($"┃                ♥                ┃");
+            Console.WriteLine($"┃                                 ┃");
+            Console.WriteLine($"┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine($"┏━━━━━━━━━━플레이  방법━━━━━━━━━━━┓");
+            Console.WriteLine($"┃                                 ┃"); 
+            Console.WriteLine($"┃  [방향키]                       ┃");
+            Console.WriteLine($"┃     ↑                           ┃");
+            Console.WriteLine($"┃   ←   →     :  이동             ┃");
+            Console.WriteLine($"┃     ↓                           ┃");
+            Console.WriteLine($"┃                                 ┃");
+            Console.WriteLine($"┃ 굴러오는 방해물을 피해          ┃");
+            Console.WriteLine($"┃ 주어진 문양을 먹고 탈출하세요   ┃");
+            Console.WriteLine($"┃                                 ┃"); 
+            Console.WriteLine($"┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
+            Console.WriteLine();
         }
         public override void Input()
         {

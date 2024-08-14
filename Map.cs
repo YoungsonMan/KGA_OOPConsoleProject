@@ -10,7 +10,7 @@ namespace KGA_OOPConsoleProject
     public class Map()
     {
 
-        private bool[,] map = new bool[,]
+        public bool[,] map = new bool[,]
         {      //  0      1      2      3      4      5      6       7     8       9     10     11     12     13     14     15    16      17     18
  /*  1 */     { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false }, 
  /*  2 */     { false,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true, false },
@@ -28,7 +28,7 @@ namespace KGA_OOPConsoleProject
  /* 14 */     { false,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true, false },
  /* 15 */     { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false },
          };
-        private void PrintMap()
+        public void PrintMap()
         {
             for (int y = 0; y < map.GetLength(0); y++)
             {

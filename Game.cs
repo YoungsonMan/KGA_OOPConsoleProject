@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using KGA_OOPConsoleProject.Objects;
 using KGA_OOPConsoleProject.Scenes;
 
 namespace KGA_OOPConsoleProject
@@ -16,8 +17,9 @@ namespace KGA_OOPConsoleProject
         private Scene currentScene;
         private Scene previousScene;
 
-        private Map map;
+        public Map map;
         
+        public Player player;
 
         public void Run()
         {
@@ -56,6 +58,8 @@ namespace KGA_OOPConsoleProject
             scenes[(int)SceneType.Stage3] = new Stage3(this);
             scenes[(int)SceneType.Stage4] = new Stage4(this);
 
+            map = new Map();
+            player = new Player();
 
 
             currentScene = scenes[(int)SceneType.Title];

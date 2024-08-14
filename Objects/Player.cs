@@ -12,13 +12,14 @@ namespace KGA_OOPConsoleProject.Objects
     {
         public Game game;
         public Scene scene;
+        public Player player;
 
         public ConsoleColor color;
         public Point pos;
         public char symbol;
         public bool removeWhenInteract;
 
-        public Player(Game game)  
+        public Player()  
         {
             this.game = game; 
             this.scene = scene;

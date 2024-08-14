@@ -15,7 +15,8 @@ namespace KGA_OOPConsoleProject.Scenes
 
         public override void Enter()
         {
-
+            Console.Clear();
+            game.map.PrintMap();
         }
         public override void Render()
         {
