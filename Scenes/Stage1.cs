@@ -11,7 +11,6 @@ namespace KGA_OOPConsoleProject.Scenes
         private bool[,] map;
         public Stage1(Game game) : base(game)
         {
-            Console.WriteLine("Stage1");
             map = new bool[,]
             {
                 { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false },
@@ -48,6 +47,10 @@ namespace KGA_OOPConsoleProject.Scenes
                 }
                 Console.WriteLine();
             }
+        }
+        private void PrintInfo()
+        {
+
         }
         public override void Enter()
         {
