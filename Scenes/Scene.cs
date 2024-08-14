@@ -2,20 +2,20 @@
 {
     public abstract class Scene
     {
-        public Launcher launcher;
-        public Scene(Launcher launcher)
+        public Game game;
+        public Scene(Game game)
         {
-            this.launcher = launcher;
-            Map map = new Map(18,15);
+            this.game = game;
+            //Map map = new Map();
 
 
         }
-        public abstract void Start();
+        public abstract void Enter();
         public abstract void Render();
         public abstract void Input();
         public abstract void Update();
         public abstract void Interaction();
-        public abstract void End();
+        public abstract void Exit();
 
     }
 }

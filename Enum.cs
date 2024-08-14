@@ -12,7 +12,9 @@ namespace KGA_OOPConsoleProject
         Information,
         Render,
         Map,
-        End
+        End,
+
+        Size
 
     }
 }

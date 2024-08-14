@@ -7,11 +7,9 @@ using System.Threading.Tasks;
 
 namespace KGA_OOPConsoleProject
 {
-    public class Map(int x, int y)
+    public class Map()
     {
-        int x = 0;
-        int y = 0;
-        public bool[,] map = new bool[,]
+        private bool[,] map = new bool[,]
         {      //  0      1      2      3      4      5      6       7     8       9     10     11     12     13     14     15    16      17     18
  /*  1 */     { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false }, 
  /*  2 */     { false,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true, false },
@@ -29,6 +27,23 @@ namespace KGA_OOPConsoleProject
  /* 14 */     { false,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true,  true, false },
  /* 15 */     { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false },
          };
-
+        private void PrintMap()
+        {
+            for (int y = 0; y < map.GetLength(0); y++)
+            {
+                for (int x = 0; x < map.GetLength(1); x++)
+                {
+                    if (map[y,x])
+                    {
+                        Console.Write(" ");
+                    }
+                    else
+                    {
+                        Console.WriteLine("▒");
+                    }
+                }
+                Console.WriteLine();
+            }
+        }
     }
 }

@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Launcher launcher = new Launcher();
-            launcher.Run();
+            Game game= new Game();
+            game.Run();
         }
     }
 }

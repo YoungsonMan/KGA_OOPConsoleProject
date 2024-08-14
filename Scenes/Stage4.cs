@@ -8,12 +8,12 @@ namespace KGA_OOPConsoleProject.Scenes
 {
     public class Stage4 : Scene
     {
-        public Stage4(Launcher launcher) : base(launcher)
+        public Stage4(Game game) : base(game)
         {
 
         }
 
-        public override void Start()
+        public override void Enter()
         {
 
         }
@@ -33,7 +33,7 @@ namespace KGA_OOPConsoleProject.Scenes
         {
 
         }
-        public override void End()
+        public override void Exit()
         {
 
         }
