@@ -1,6 +1,7 @@
 ﻿using KGA_OOPConsoleProject.Objects;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,10 +10,11 @@ namespace KGA_OOPConsoleProject.Scenes
 {
     public class Stage1 : Scene
     {
+        private Point playerPos;
 
         public Stage1(Game game) : base(game)
         {
-           
+            playerPos = new Point(1, 1);
         }
         private void PrintMap()
         {
@@ -28,9 +30,12 @@ namespace KGA_OOPConsoleProject.Scenes
         }
         public override void Render()
         {
+
             Console.Clear();
             game.map.PrintMap();
-
+            game.obstacle.PrintObstacle();
+            //playerPos = new Point(1,1);
+            game.player.PrintPlayer();
             
         }
         public override void Input()

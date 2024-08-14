@@ -8,10 +8,13 @@ namespace KGA_OOPConsoleProject.Functions
         private Point obstaclePost;
         private ConsoleKey input;
 
-        Map map = new Map();
+        public Game game;
+        public Map map;
 
-        private void Moves()
+        public void Moves()
         {
+            map = new Map();
+            
             Point next = playerPos;
             switch (input)
             {
@@ -32,6 +35,11 @@ namespace KGA_OOPConsoleProject.Functions
         //    {
         //        playerPos = next;
         //    }
+
+         //   if (map[next.X, next.Y])
+         //   {
+         //       playerPos = next;
+         //   }
 
         }
     }

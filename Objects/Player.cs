@@ -14,6 +14,7 @@ namespace KGA_OOPConsoleProject.Objects
         public Scene scene;
         public Player player;
 
+
         public ConsoleColor color;
         public Point pos;
         public char symbol;
@@ -25,6 +26,13 @@ namespace KGA_OOPConsoleProject.Objects
             this.scene = scene;
         }
 
-
+        public void PrintPlayer()
+        {
+            pos.X = 1; pos.Y = 1;
+            Console.SetCursorPosition(pos.X, pos.Y);
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("P");
+            Console.ResetColor();
+        }
     }
 }

@@ -17,13 +17,15 @@ namespace KGA_OOPConsoleProject
         private Scene currentScene;
         private Scene previousScene;
 
+
+
         public Map map;
-        
         public Player player;
+        public Obstacle obstacle;
 
         public void Run()
         {
-            //Console.CursorVisible = false;
+            Console.CursorVisible = false;
             Start();
             while (isRunnning)
             {
@@ -49,7 +51,7 @@ namespace KGA_OOPConsoleProject
         private void Start()
         {
             isRunnning = true;
-
+            
             scenes = new Scene[(int)SceneType.Size];
             scenes[(int)SceneType.Title]= new TitleScene(this);
             scenes[(int)SceneType.Information] = new Information(this);
@@ -60,6 +62,7 @@ namespace KGA_OOPConsoleProject
 
             map = new Map();
             player = new Player();
+            obstacle = new Obstacle();
 
 
             currentScene = scenes[(int)SceneType.Title];

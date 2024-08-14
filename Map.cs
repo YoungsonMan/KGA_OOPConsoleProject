@@ -46,5 +46,6 @@ namespace KGA_OOPConsoleProject
                 Console.WriteLine();
             }
         }
+       
     }
 }
