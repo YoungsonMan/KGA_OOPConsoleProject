@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using KGA_OOPConsoleProject.Objects;
 using KGA_OOPConsoleProject.Scenes;
+using KGA_OOPConsoleProject.Printers;
+
 
 namespace KGA_OOPConsoleProject
 {
@@ -18,11 +20,11 @@ namespace KGA_OOPConsoleProject
         private Scene previousScene;
 
 
-
+        // 불러오기
         public Map map;
         public Player player;
         public Obstacle obstacle;
-
+        public Printer printer;
         public void Run()
         {
             Console.CursorVisible = false;
@@ -63,7 +65,7 @@ namespace KGA_OOPConsoleProject
             map = new Map();
             player = new Player();
             obstacle = new Obstacle();
-
+            printer = new Printer();
 
             currentScene = scenes[(int)SceneType.Title];
             currentScene.Enter();

@@ -34,6 +34,7 @@ namespace KGA_OOPConsoleProject.Scenes
             Console.Clear();
             game.map.PrintMap();
             game.obstacle.PrintObstacle();
+            game.printer.printObsH();
             //playerPos = new Point(1,1);
             game.player.PrintPlayer();
             
@@ -44,7 +45,7 @@ namespace KGA_OOPConsoleProject.Scenes
         }
         public override void Update()
         {
-            game.ChangeScene(SceneType.Stage2);
+           // game.ChangeScene(SceneType.Stage2);
         }
         public override void Interaction()
         {
