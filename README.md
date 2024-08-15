@@ -78,9 +78,9 @@ Lost Ark Legion Raid  Kakul Saydon Gate 2 Maze Mimic
 실제 게임영상
 [https://youtu.be/slN88ptQChg?si=W2IP00Zfhm6ZHgyl&t=9](url)
 
-![Trello01](https://github.com/user-attachments/assets/04600682-fb7f-48f5-b101-331447fe5376)
+![Trello05](https://github.com/user-attachments/assets/080f09b3-5b82-44d8-8d15-4e7c1d185cd5)
 ![flowChartdrawio drawio_Transparent_BG](https://github.com/user-attachments/assets/b13730f0-7881-467b-aa30-126342501525)
-![KGA_OOPConsoleProject drawio_TR_BG](https://github.com/user-attachments/assets/0a8e36bc-462b-401f-8b3f-c82db0c24cb7)
+![KGA_OOPConsoleProject drawio_Dark_BG2](https://github.com/user-attachments/assets/7805a6e4-c643-4c95-a14b-a111ff9a274c)
 
 
 # 🗺️Roadmap
@@ -91,12 +91,12 @@ Lost Ark Legion Raid  Kakul Saydon Gate 2 Maze Mimic
     - [x]  노트정리
     - [x]  FlowChart 만들기
     - [x]  Trello: ToDo 만들기
-        - [ ]  일정 계속 업데이트
+        - [x]  일정 계속 업데이트
     - [x]  Draw.io 도표만들기
         - [x]  표 그리기
-        - [ ]  표 연결
+        - [x]  표 연결
 - [ ]  구조설계
-    - [ ]  객체 만들기
+    - [x]  객체 만들기
     - [ ]  상호작용
 - [ ]  기능구현
 - [ ]  테스트 및 버그픽스
