@@ -35,6 +35,7 @@ namespace KGA_OOPConsoleProject.Scenes
             game.map.PrintMap();
             game.obstacle.PrintObstacle();
             game.printer.printObsH();
+            game.printer.createShape();
             //playerPos = new Point(1,1);
             game.player.PrintPlayer();
             

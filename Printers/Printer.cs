@@ -1,17 +1,15 @@
 ﻿using KGA_OOPConsoleProject.Objects;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KGA_OOPConsoleProject.Printers
 {
     public class Printer
     {
-       
+
         public Obstacle Obstacle;
         public ObsFactory ObsFactory;
+
+        public Shape Shape;
+        public ShapeBuilder ShapeBuilder;
 
         public void printObsV()
         {
@@ -38,6 +36,24 @@ namespace KGA_OOPConsoleProject.Printers
             obstaclesH[6] = ObsFactory.Instantiate<Obstacle>("17");
             obstaclesH[7] = ObsFactory.Instantiate<Obstacle>("18");
         }
+
+        public void createShape()
+        {
+            Shape[] shapes = new Shape[4];
+            ShapeBuilder spadeBuilder = new ShapeBuilder();
+            ShapeBuilder heartBuilder = new ShapeBuilder();
+            ShapeBuilder cloverBuilder = new ShapeBuilder();
+            ShapeBuilder diamondBuilder = new ShapeBuilder();
+            spadeBuilder.SetColor(ConsoleColor.Blue).SetSymbol('♠');
+            heartBuilder.SetColor(ConsoleColor.Red).SetSymbol('♥');
+            cloverBuilder.SetColor(ConsoleColor.Green).SetSymbol('♣');
+            diamondBuilder.SetColor(ConsoleColor.Yellow).SetSymbol('◆');
+            shapes[0] = spadeBuilder.Build();
+            shapes[1] = heartBuilder.Build();
+            shapes[2] = cloverBuilder.Build();
+            shapes[3] = diamondBuilder.Build();
+        }
+
 
     }
 }
