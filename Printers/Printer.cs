@@ -1,9 +1,16 @@
 ﻿using KGA_OOPConsoleProject.Objects;
+using System.Drawing;
 
 namespace KGA_OOPConsoleProject.Printers
 {
     public class Printer
     {
+        public Point playerPos;
+        public Point obstaclePost;
+
+        public Game game;
+        public Map map;
+        public Player Player;
 
         public Obstacle Obstacle;
         public ObsFactory ObsFactory;
@@ -11,6 +18,18 @@ namespace KGA_OOPConsoleProject.Printers
         public Shape Shape;
         public ShapeBuilder ShapeBuilder;
 
+        private RandomSpawn randomSpawn;
+
+        public void PrintPlayer()
+        {
+            randomSpawn = new RandomSpawn();
+            playerPos.X = randomSpawn.RandomX(2, 17); 
+            playerPos.Y = randomSpawn.RandomY(2, 13); 
+            Console.SetCursorPosition(playerPos.X, playerPos.Y);
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("P");
+            Console.ResetColor();
+        }
         public void printObsV()
         {
             Obstacle[] obstaclesV = new Obstacle[10];

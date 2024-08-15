@@ -1,4 +1,5 @@
-﻿using KGA_OOPConsoleProject.Objects;
+﻿using KGA_OOPConsoleProject.Functions;
+using KGA_OOPConsoleProject.Objects;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -38,6 +39,7 @@ namespace KGA_OOPConsoleProject.Scenes
             game.printer.createShape();
             //playerPos = new Point(1,1);
             game.player.PrintPlayer();
+            game.printer.PrintPlayer();
             
         }
         public override void Input()
@@ -46,6 +48,7 @@ namespace KGA_OOPConsoleProject.Scenes
         }
         public override void Update()
         {
+            game.movement.Moves();
            // game.ChangeScene(SceneType.Stage2);
         }
         public override void Interaction()

@@ -8,7 +8,7 @@ using KGA_OOPConsoleProject.Scenes;
 
 namespace KGA_OOPConsoleProject.Objects
 {
-    public class Obstacle
+    public class Obstacle : IInteractable
     {
         public Game game;
         public Scene scene;
@@ -42,5 +42,11 @@ namespace KGA_OOPConsoleProject.Objects
             Console.WriteLine("○");
             Console.ResetColor();
         }
+        public void Interaction(Player player)
+        {
+            game.Reset(this);
+        }
+
+        
     }
 }

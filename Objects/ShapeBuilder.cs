@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using KGA_OOPConsoleProject.Printers;
 using KGA_OOPConsoleProject.Scenes;
 
 namespace KGA_OOPConsoleProject.Objects
@@ -15,11 +16,14 @@ namespace KGA_OOPConsoleProject.Objects
         public ConsoleColor color;
         public char symbol;
         public bool removeWhenInteract;
-        
+
+        private RandomSpawn randomSpawn;
+
         public ShapeBuilder()
         {
-            this.pos.X = 7;
-            this.pos.Y = 7;
+            randomSpawn = new RandomSpawn();
+            this.pos.X = randomSpawn.RandomX(2, 17);
+            this.pos.Y = randomSpawn.RandomY(2, 13);
             this.color = ConsoleColor.White;
             Console.SetCursorPosition(pos.X, pos.Y);
             this.symbol = '★';
@@ -41,8 +45,9 @@ namespace KGA_OOPConsoleProject.Objects
             Shape shape = new Shape();
             shape.color = color;
             shape.symbol = symbol;
-            shape.pos.X = 3;
-            shape.pos.Y = 3;
+            shape.pos.X = randomSpawn.RandomX(2, 17);
+            shape.pos.Y = randomSpawn.RandomY(2, 13);
+            Console.WriteLine(symbol);
             return shape;
         }
 

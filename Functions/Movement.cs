@@ -1,16 +1,22 @@
-﻿using System.Drawing;
+﻿using KGA_OOPConsoleProject.Objects;
+using System.Drawing;
+using KGA_OOPConsoleProject.Printers;
+
 
 namespace KGA_OOPConsoleProject.Functions
 {
     public class Movement
     {
-        private Point playerPos;
-        private Point obstaclePost;
-        private ConsoleKey input;
+        public Point playerPos;
+        public Point obstaclePost;
+        public ConsoleKey input;
+
 
         public Game game;
         public Map map;
-
+        
+        public Player Player;
+        public Printer printer;
         public void Moves()
         {
             map = new Map();
@@ -31,16 +37,20 @@ namespace KGA_OOPConsoleProject.Functions
                     next = new Point(playerPos.X + 1, playerPos.Y);
                     break;
             }
-        //    if (map[next.X, next.Y])
-        //    {
-        //        playerPos = next;
-        //    }
-
-         //   if (map[next.X, next.Y])
-         //   {
-         //       playerPos = next;
-         //   }
-
+          //  if (map[next.Y, next.X])
+          //  {
+          //      playerPos = next;
+          //  }
+         
+           
         }
+    //    public void MoveUP()
+    //    {
+    //        Point next = new Point() { X = playerPos.X, Y = playerPos.Y - 1};
+    //        if (map[next.Y, next.X])
+    //        {
+    //            playerPos = next;   
+    //        }
+    //    }
     }
 }
