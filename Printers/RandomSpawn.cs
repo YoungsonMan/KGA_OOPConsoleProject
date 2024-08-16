@@ -38,6 +38,12 @@ namespace KGA_OOPConsoleProject.Printers
             return randNum2;
         }
 
+    //    public int randomShape() 
+    //    {// 1-Spade, 2-Heart, 3-Clover, 4-Diamond
+    //        Random rand = new Random();
+    //        rand.Next(1, 4);
+    //        return rand.Next();
+    //    }
 
     }
 }

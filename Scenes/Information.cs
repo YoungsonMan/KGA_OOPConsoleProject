@@ -1,6 +1,8 @@
-﻿using System;
+﻿using KGA_OOPConsoleProject.Objects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,13 +10,15 @@ namespace KGA_OOPConsoleProject.Scenes
 {
     public class Information : Scene
     {
-
-       
+        public Player player;
+        
         public Information(Game game) : base(game)
         {
-            
 
-
+        }
+        private void PrintInfo()
+        {
+           
         }
         public override void Enter()
         {
@@ -22,10 +26,29 @@ namespace KGA_OOPConsoleProject.Scenes
         }
         public void infoOut()
         {
-            string[] info = new string[20];
+            int printNumber = game.player.shapeNumber;
+            char printChar = ' ';
+            if (printNumber == 1)
+            {
+                printChar = '♠';
+            }
+            else if (printNumber == 2)
+            {
+                printChar = '♥';
+            }
+            else if (printNumber == 3)
+            {
+                printChar = '♣';
+            }
+            else
+            {
+                printChar = '◆';
+            }
+
+            string[] info = new string[22];
             info[0] = ($"┏━━━━━━━━━━주어진  문양━━━━━━━━━━━┓");
             info[1] = ($"┃                                 ┃");
-            info[2] = ($"┃                ♥                ┃");
+            info[2] = ($"┃               {printChar}               ┃");
             info[3] = ($"┃                                 ┃");
             info[4] = ($"┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
             info[5] = "";
@@ -40,8 +63,11 @@ namespace KGA_OOPConsoleProject.Scenes
             info[14] = ($"┃ 굴러오는 장애물을 피해          ┃");
             info[15] = ($"┃ 주어진 문양을 먹고 탈출하세요   ┃");
             info[16] = ($"┃                                 ┃");
-            info[17] = ($"┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
-            info[18] = "";
+            info[17] = ($"┃ S = 스페이드♠    H = 하트♥      ┃");
+            info[18] = ($"┃ C = 클로버♣      D = 다이아◆    ┃");
+            info[19] = ($"┃                                 ┃");
+            info[20] = ($"┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
+            info[21] = "";
 
             foreach (string str in info)
             {

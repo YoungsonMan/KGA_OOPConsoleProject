@@ -10,6 +10,7 @@ using KGA_OOPConsoleProject.Printers;
 using KGA_OOPConsoleProject.Functions;
 
 
+
 namespace KGA_OOPConsoleProject
 {
     public class Game
@@ -27,6 +28,7 @@ namespace KGA_OOPConsoleProject
         public Obstacle obstacle;
         public Printer printer;
         public Movement movement;
+        public Information info;
         public void Run()
         {
             Console.CursorVisible = false;
@@ -92,6 +94,7 @@ namespace KGA_OOPConsoleProject
             obstacle = new Obstacle();
             printer = new Printer();
             movement = new Movement();
+            info = new Information(this);
 
 
             currentScene = scenes[(int)SceneType.Title];

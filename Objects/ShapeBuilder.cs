@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using KGA_OOPConsoleProject.Printers;
@@ -16,11 +17,13 @@ namespace KGA_OOPConsoleProject.Objects
         public ConsoleColor color;
         public char symbol;
         public bool removeWhenInteract;
+        public int number;
 
         private RandomSpawn randomSpawn;
 
         public ShapeBuilder()
         {
+            
             randomSpawn = new RandomSpawn();
             this.pos.X = randomSpawn.RandomX(2, 17);
             this.pos.Y = randomSpawn.RandomY(2, 13);
@@ -29,7 +32,11 @@ namespace KGA_OOPConsoleProject.Objects
             this.symbol = '★';
             Console.ResetColor(); 
         }
-
+        public ShapeBuilder SetNumber(int number)
+        {
+            this.number = number;
+            return this;
+        }
         public ShapeBuilder SetColor(ConsoleColor color)
         {
             this.color = color;
@@ -43,6 +50,7 @@ namespace KGA_OOPConsoleProject.Objects
         public Shape Build()
         {
             Shape shape = new Shape();
+            shape.number = number; 
             shape.color = color;
             shape.symbol = symbol;
             shape.pos.X = randomSpawn.RandomX(2, 17);

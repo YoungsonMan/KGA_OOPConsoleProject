@@ -18,13 +18,10 @@ namespace KGA_OOPConsoleProject.Scenes
         {
             playerPos = new Point();
         }
-    //    private void PrintMap()    맵을 따로 빼서 렌더에 넣었기 떄문에 필요 없을거 같다.
-    //    {
-    //
-    //    }
+
         private void PrintInfo()
         {
-            info.infoOut();
+            game.info.infoOut();
         }
         public override void Enter()
         {
@@ -34,8 +31,9 @@ namespace KGA_OOPConsoleProject.Scenes
         {
 
             Console.Clear();
-            //info.infoOut();
+            PrintInfo();
             game.map.PrintMap();
+
             game.obstacle.PrintObstacle();
             game.printer.printObsH();
             game.printer.createShape();

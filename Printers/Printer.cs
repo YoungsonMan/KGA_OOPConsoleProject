@@ -63,6 +63,10 @@ namespace KGA_OOPConsoleProject.Printers
             ShapeBuilder heartBuilder = new ShapeBuilder();
             ShapeBuilder cloverBuilder = new ShapeBuilder();
             ShapeBuilder diamondBuilder = new ShapeBuilder();
+            spadeBuilder.SetNumber(1);
+            heartBuilder.SetNumber(2);
+            cloverBuilder.SetNumber(3);
+            diamondBuilder.SetNumber(4);
             spadeBuilder.SetColor(ConsoleColor.Blue).SetSymbol('♠');
             heartBuilder.SetColor(ConsoleColor.Red).SetSymbol('♥');
             cloverBuilder.SetColor(ConsoleColor.Green).SetSymbol('♣');

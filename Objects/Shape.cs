@@ -19,6 +19,7 @@ namespace KGA_OOPConsoleProject.Objects
         public ConsoleColor color;
         public char symbol;
         public bool removeWhenInteract;
+        public int number;
 
         public Shape()
         {

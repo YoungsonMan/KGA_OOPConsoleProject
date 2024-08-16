@@ -25,7 +25,7 @@ namespace KGA_OOPConsoleProject.Functions
             switch (input)
             {
                 case ConsoleKey.UpArrow:
-                    next = new Point(playerPos.X, playerPos.Y - 1);
+                    next = new Point(game.player.playerPos.X, playerPos.Y - 1);
                     break;
                 case ConsoleKey.DownArrow:
                     next = new Point(playerPos.X, playerPos.Y + 1);

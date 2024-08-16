@@ -14,6 +14,7 @@
 
         }
         public abstract void Enter();
+
         public abstract void Render();
         public abstract void Input();
         public abstract void Update();

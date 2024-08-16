@@ -13,7 +13,10 @@ namespace KGA_OOPConsoleProject.Scenes
         {
 
         }
-
+        private void PrintInfo()
+        {
+            info.infoOut();
+        }
         public override void Enter()
         {
 
