@@ -6,18 +6,21 @@ namespace KGA_OOPConsoleProject.Objects
     {
         //public Game game;
         public Obstacle Obstacle;
+        public Point obsPos;
 
-        public static T Instantiate<T>(string name) where T : Obstacle
+
+        public static T Instantiate<T>(string name) where T : Obstacle, IInteractable
         {
+            Point obsPos = new Point();
             #region 위아래
             if (name == "1")
             {
                 Obstacle obstacleV = new Obstacle();
                 obstacleV.name = "○";
 
-                Point point = new Point();
-                point.X = 1; point.Y = 1;
-                Console.SetCursorPosition(point.X, point.Y);
+               
+                obsPos.X = 1; obsPos.Y = 1;
+                Console.SetCursorPosition(obsPos.X, obsPos.Y);
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("○");
                 Console.ResetColor();
@@ -30,8 +33,8 @@ namespace KGA_OOPConsoleProject.Objects
                 obstacleV.name = "○";
 
                 Point point = new Point();
-                point.X = 3; point.Y = 1;
-                Console.SetCursorPosition(point.X, point.Y);
+                obsPos.X = 3; obsPos.Y = 1;
+                Console.SetCursorPosition(obsPos.X, obsPos.Y);
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("○");
                 Console.ResetColor();
@@ -44,8 +47,8 @@ namespace KGA_OOPConsoleProject.Objects
                 obstacleV.name = "○";
 
                 Point point = new Point();
-                point.X = 5; point.Y = 1;
-                Console.SetCursorPosition(point.X, point.Y);
+                obsPos.X = 5; obsPos.Y = 1;
+                Console.SetCursorPosition(obsPos.X, obsPos.Y);
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("○");
                 Console.ResetColor();
@@ -58,8 +61,8 @@ namespace KGA_OOPConsoleProject.Objects
                 obstacleV.name = "○";
 
                 Point point = new Point();
-                point.X = 7; point.Y = 1;
-                Console.SetCursorPosition(point.X, point.Y);
+                obsPos.X = 7; obsPos.Y = 1;
+                Console.SetCursorPosition(obsPos.X, obsPos.Y);
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("○");
                 Console.ResetColor();
@@ -72,8 +75,8 @@ namespace KGA_OOPConsoleProject.Objects
                 obstacleV.name = "○";
 
                 Point point = new Point();
-                point.X = 9; point.Y = 1;
-                Console.SetCursorPosition(point.X, point.Y);
+                obsPos.X = 9; obsPos.Y = 1;
+                Console.SetCursorPosition(obsPos.X, obsPos.Y);
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("○");
                 Console.ResetColor();
@@ -86,8 +89,8 @@ namespace KGA_OOPConsoleProject.Objects
                 obstacleV.name = "○";
 
                 Point point = new Point();
-                point.X = 11; point.Y = 1;
-                Console.SetCursorPosition(point.X, point.Y);
+                obsPos.X = 11; obsPos.Y = 1;
+                Console.SetCursorPosition(obsPos.X, obsPos.Y);
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("○");
                 Console.ResetColor();
@@ -100,8 +103,8 @@ namespace KGA_OOPConsoleProject.Objects
                 obstacleV.name = "○";
 
                 Point point = new Point();
-                point.X = 13; point.Y = 1;
-                Console.SetCursorPosition(point.X, point.Y);
+                obsPos.X = 13; obsPos.Y = 1;
+                Console.SetCursorPosition(obsPos.X, obsPos.Y);
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("○");
                 Console.ResetColor();
@@ -114,8 +117,8 @@ namespace KGA_OOPConsoleProject.Objects
                 obstacleV.name = "○";
 
                 Point point = new Point();
-                point.X = 15; point.Y = 1;
-                Console.SetCursorPosition(point.X, point.Y);
+                obsPos.X = 15; obsPos.Y = 1;
+                Console.SetCursorPosition(obsPos.X, obsPos.Y);
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("○");
                 Console.ResetColor();
@@ -128,8 +131,8 @@ namespace KGA_OOPConsoleProject.Objects
                 obstacleV.name = "○";
 
                 Point point = new Point();
-                point.X = 17; point.Y = 1;
-                Console.SetCursorPosition(point.X, point.Y);
+                obsPos.X = 17; obsPos.Y = 1;
+                Console.SetCursorPosition(obsPos.X, obsPos.Y);
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("○");
                 Console.ResetColor();
@@ -145,8 +148,8 @@ namespace KGA_OOPConsoleProject.Objects
                 obstacleH.name = "○";
 
                 Point point = new Point();
-                point.X = 1; point.Y = 1;
-                Console.SetCursorPosition(point.X, point.Y);
+                obsPos.X = 1; obsPos.Y = 1;
+                Console.SetCursorPosition(obsPos.X, obsPos.Y);
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("○");
                 Console.ResetColor();
@@ -159,8 +162,8 @@ namespace KGA_OOPConsoleProject.Objects
                 obstacleH.name = "○";
 
                 Point point = new Point();
-                point.X = 1; point.Y = 3;
-                Console.SetCursorPosition(point.X, point.Y);
+                obsPos.X = 1; obsPos.Y = 3;
+                Console.SetCursorPosition(obsPos.X, obsPos.Y);
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("○");
                 Console.ResetColor();
@@ -173,8 +176,8 @@ namespace KGA_OOPConsoleProject.Objects
                 obstacleH.name = "○";
 
                 Point point = new Point();
-                point.X = 1; point.Y = 5;
-                Console.SetCursorPosition(point.X, point.Y);
+                obsPos.X = 1; obsPos.Y = 5;
+                Console.SetCursorPosition(obsPos.X, obsPos.Y);
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("○");
                 Console.ResetColor();
@@ -187,8 +190,8 @@ namespace KGA_OOPConsoleProject.Objects
                 obstacleH.name = "○";
 
                 Point point = new Point();
-                point.X = 1; point.Y = 7;
-                Console.SetCursorPosition(point.X, point.Y);
+                obsPos.X = 1; obsPos.Y = 7;
+                Console.SetCursorPosition(obsPos.X, obsPos.Y);
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("○");
                 Console.ResetColor();
@@ -201,8 +204,8 @@ namespace KGA_OOPConsoleProject.Objects
                 obstacleH.name = "○";
 
                 Point point = new Point();
-                point.X = 1; point.Y = 9;
-                Console.SetCursorPosition(point.X, point.Y);
+                obsPos.X = 1; obsPos.Y = 9;
+                Console.SetCursorPosition(obsPos.X, obsPos.Y);
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("○");
                 Console.ResetColor();
@@ -215,8 +218,8 @@ namespace KGA_OOPConsoleProject.Objects
                 obstacleH.name = "○";
 
                 Point point = new Point();
-                point.X = 1; point.Y = 11;
-                Console.SetCursorPosition(point.X, point.Y);
+                obsPos.X = 1; obsPos.Y = 11;
+                Console.SetCursorPosition(obsPos.X, obsPos.Y);
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("○");
                 Console.ResetColor();
@@ -229,28 +232,15 @@ namespace KGA_OOPConsoleProject.Objects
                 obstacleH.name = "○";
 
                 Point point = new Point();
-                point.X = 1; point.Y = 13;
-                Console.SetCursorPosition(point.X, point.Y);
+                obsPos.X = 1; obsPos.Y = 13;
+                Console.SetCursorPosition(obsPos.X, obsPos.Y);
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("○");
                 Console.ResetColor();
 
                 return obstacleH as T;
             }
-            else if (name == "18")
-            {
-                Obstacle obstacleH = new Obstacle();
-                obstacleH.name = "○";
 
-                Point point = new Point();
-                point.X = 15; point.Y = 1;
-                Console.SetCursorPosition(point.X, point.Y);
-                Console.ForegroundColor = ConsoleColor.Magenta;
-                Console.WriteLine("○");
-                Console.ResetColor();
-
-                return obstacleH as T;
-            }
             #endregion
 
             else

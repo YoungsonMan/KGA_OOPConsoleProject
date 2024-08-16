@@ -26,6 +26,7 @@ namespace KGA_OOPConsoleProject
         public Map map;
         public Player player;
         public Obstacle obstacle;
+        public ObsFactory obsFactory;
         public Printer printer;
         public Movement movement;
         public Information info;
@@ -59,6 +60,8 @@ namespace KGA_OOPConsoleProject
         // 방해물 부딪히면 리셋
         public void Reset(Obstacle obstacle)
         {
+            obstacle = new Obstacle();
+            obsFactory = new ObsFactory();
             previousScene = currentScene;
             currentScene.Exit();
             currentScene = scenes[(int)SceneType.Stage1];
@@ -93,6 +96,7 @@ namespace KGA_OOPConsoleProject
             map = new Map();
             player = new Player();
             obstacle = new Obstacle();
+            obsFactory = new ObsFactory();
             shape = new Shape();
             printer = new Printer();
             movement = new Movement(this);

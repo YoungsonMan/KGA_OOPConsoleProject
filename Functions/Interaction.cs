@@ -6,6 +6,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using KGA_OOPConsoleProject.Objects;
 
 
 namespace KGA_OOPConsoleProject.Functions
@@ -16,28 +17,22 @@ namespace KGA_OOPConsoleProject.Functions
         private Point playerPos;
 
         public Game game;
-        
+        public Obstacle obstacle;
+        public ObsFactory obsFactory;
 
-
-        public List<GameObject> gameObjects;
-        public Interaction()
+        public List<Obstacle> obstacles;
+        public Interaction(Game game)
         {
-
-
+            this.game = game;
             
         }
         public void Interacts()
         {
-            foreach(GameObject gameObject in gameObjects)
+            foreach(Obstacle obstacle in obstacles)
             {
-                if (playerPos.X == gameObject.pos.X && playerPos.Y == gameObject.pos.Y)
+                if (game.player.playerPos.X == game.obstacle.obsPos.X && game.player.playerPos.Y == game.obstacle.obsPos.Y)
                 {
-                    gameObject.Interaction(game.player);
-                    if (gameObject.removeWhenInteract)
-                    {
-                        gameObjects.Remove(gameObject);
-                    }
-                    return;
+                   // game.Reset();
                 }
             }
         }

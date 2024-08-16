@@ -33,7 +33,7 @@ namespace KGA_OOPConsoleProject.Scenes
             Console.Clear();
             game.map.PrintMap();
 
-            game.obstacle.PrintObstacle();
+           
             game.printer.printObsH();
 
             game.printer.createShape();
@@ -48,6 +48,7 @@ namespace KGA_OOPConsoleProject.Scenes
         public override void Update()
         {
             game.movement.Moves(input);
+           // game.movement.ObsMovesH(input); 이거 또 그 null 아 참조힘들다
            // game.ChangeScene(SceneType.Stage2);
         }
         public override void Interaction()

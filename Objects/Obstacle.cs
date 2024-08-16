@@ -15,7 +15,7 @@ namespace KGA_OOPConsoleProject.Objects
         public Obstacle obstacle;
 
         public ConsoleColor color;
-        public Point pos;
+        public Point obsPos;
         public char symbol;
         public bool removeWhenInteract;
 
@@ -23,6 +23,7 @@ namespace KGA_OOPConsoleProject.Objects
 
         public Obstacle() 
         {
+            obsPos.X = 0; obsPos.Y = 0;
         }
         // 장애물을 대량생산 하려고하는데 밑에 Obstacle(Game game)
         // CS7036: 'Obstacle.Obstacle(Game)의 필수 매개변수 'game'에 해당하는 인수가 없습니다.
@@ -36,8 +37,8 @@ namespace KGA_OOPConsoleProject.Objects
         }
         public void PrintObstacle()
         {
-            pos.X = 3; pos.Y = 3;
-            Console.SetCursorPosition(pos.X, pos.Y);
+            
+            Console.SetCursorPosition(obsPos.X, obsPos.Y);
             Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine("○");
             Console.ResetColor();
