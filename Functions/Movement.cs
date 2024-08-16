@@ -1,6 +1,6 @@
 ﻿using KGA_OOPConsoleProject.Objects;
-using System.Drawing;
 using KGA_OOPConsoleProject.Printers;
+using System.Drawing;
 
 
 namespace KGA_OOPConsoleProject.Functions
@@ -13,36 +13,37 @@ namespace KGA_OOPConsoleProject.Functions
 
 
         public Game game;
-        public Map map;
-        
+
         public Player player;
         public Printer printer;
-        public void Moves()
-        {
 
-            
-            Point next = player.playerPos;
+        public Movement(Game game)
+        {
+            this.game = game;
+        }
+        public void Moves(ConsoleKey input)
+        {
             switch (input)
             {
                 case ConsoleKey.UpArrow:
-                    next = new Point(game.player.playerPos.X, playerPos.Y - 1);
+                    if (game.map.map[game.player.playerPos.Y - 1, game.player.playerPos.X])
+                        game.player.playerPos = new Point(game.player.playerPos.X, game.player.playerPos.Y - 1);
                     break;
                 case ConsoleKey.DownArrow:
-                    next = new Point(playerPos.X, playerPos.Y + 1);
+                    if (game.map.map[game.player.playerPos.Y + 1, game.player.playerPos.X])
+                        game.player.playerPos = new Point(game.player.playerPos.X, game.player.playerPos.Y + 1);
                     break;
                 case ConsoleKey.LeftArrow:
-                    next = new Point(playerPos.X - 1, playerPos.Y);
+                    if (game.map.map[game.player.playerPos.Y, game.player.playerPos.X - 1])
+                        game.player.playerPos = new Point(game.player.playerPos.X - 1, game.player.playerPos.Y);
                     break;
                 case ConsoleKey.RightArrow:
-                    next = new Point(playerPos.X + 1, playerPos.Y);
+                    if (game.map.map[game.player.playerPos.Y, game.player.playerPos.X + 1])
+                        game.player.playerPos = new Point(game.player.playerPos.X + 1, game.player.playerPos.Y);
                     break;
             }
-            if (game.map.map[next.Y, next.X])
-            {
-                playerPos = next;
-            }
-         
-           
+
+
         }
 
     }

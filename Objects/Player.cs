@@ -52,13 +52,14 @@ namespace KGA_OOPConsoleProject.Objects
             {
                 symbol = 'D';
             }
+            playerPos.X = 9; playerPos.Y = 7;
         }
 
         public void PrintPlayer()
         {
-            playerPos.X = 1; playerPos.Y = 1;
+            
             Console.SetCursorPosition(playerPos.X, playerPos.Y);
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine($"{symbol}");
             Console.ResetColor();
         }

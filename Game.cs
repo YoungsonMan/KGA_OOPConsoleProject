@@ -93,7 +93,7 @@ namespace KGA_OOPConsoleProject
             player = new Player();
             obstacle = new Obstacle();
             printer = new Printer();
-            movement = new Movement();
+            movement = new Movement(this);
             info = new Information(this);
 
 

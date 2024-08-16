@@ -31,17 +31,15 @@ namespace KGA_OOPConsoleProject.Scenes
         {
 
             Console.Clear();
-            PrintInfo();
             game.map.PrintMap();
 
             game.obstacle.PrintObstacle();
             game.printer.printObsH();
-            game.printer.createShape();
 
+            game.printer.createShape();
             game.player.PrintPlayer();
-           // game.movement.Moves();
-            game.printer.PrintPlayer();
-            
+            PrintInfo();
+
         }
         public override void Input()
         {
@@ -49,7 +47,7 @@ namespace KGA_OOPConsoleProject.Scenes
         }
         public override void Update()
         {
-            game.movement.Moves();
+            game.movement.Moves(input);
            // game.ChangeScene(SceneType.Stage2);
         }
         public override void Interaction()
