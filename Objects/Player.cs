@@ -38,5 +38,6 @@ namespace KGA_OOPConsoleProject.Objects
             Console.WriteLine("P");
             Console.ResetColor();
         }
+
     }
 }

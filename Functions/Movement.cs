@@ -21,7 +21,7 @@ namespace KGA_OOPConsoleProject.Functions
         {
 
             
-            Point next = playerPos;
+            Point next = player.playerPos;
             switch (input)
             {
                 case ConsoleKey.UpArrow:
@@ -37,20 +37,13 @@ namespace KGA_OOPConsoleProject.Functions
                     next = new Point(playerPos.X + 1, playerPos.Y);
                     break;
             }
-            if (map.map[next.Y, next.X])
+            if (game.map.map[next.Y, next.X])
             {
                 playerPos = next;
             }
          
            
         }
-    //    public void MoveUP()
-    //    {
-    //        Point next = new Point() { X = playerPos.X, Y = playerPos.Y - 1};
-    //        if (map[next.Y, next.X])
-    //        {
-    //            playerPos = next;   
-    //        }
-    //    }
+
     }
 }

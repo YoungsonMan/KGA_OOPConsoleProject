@@ -20,7 +20,7 @@ namespace KGA_OOPConsoleProject
         private Scene currentScene;
         private Scene previousScene;
 
-
+        public ConsoleKey input;
         // 불러오기
         public Map map;
         public Player player;
@@ -92,6 +92,7 @@ namespace KGA_OOPConsoleProject
             obstacle = new Obstacle();
             printer = new Printer();
             movement = new Movement();
+
 
             currentScene = scenes[(int)SceneType.Title];
             currentScene.Enter();
