@@ -16,6 +16,7 @@ namespace KGA_OOPConsoleProject.Printers
         public ObsFactory ObsFactory;
 
         public Shape[] Shape;
+        public Obstacle[] obstaclesH;
         public ShapeBuilder ShapeBuilder;
 
         private RandomSpawn randomSpawn;
@@ -45,7 +46,7 @@ namespace KGA_OOPConsoleProject.Printers
         }
         public void printObsH()
         {
-            Obstacle[] obstaclesH = new Obstacle[10];
+            obstaclesH = new Obstacle[7];
             obstaclesH[0] = ObsFactory.Instantiate<Obstacle>("11");
             obstaclesH[1] = ObsFactory.Instantiate<Obstacle>("12");
             obstaclesH[2] = ObsFactory.Instantiate<Obstacle>("13");
@@ -53,8 +54,20 @@ namespace KGA_OOPConsoleProject.Printers
             obstaclesH[4] = ObsFactory.Instantiate<Obstacle>("15");
             obstaclesH[5] = ObsFactory.Instantiate<Obstacle>("16");
             obstaclesH[6] = ObsFactory.Instantiate<Obstacle>("17");
-            obstaclesH[7] = ObsFactory.Instantiate<Obstacle>("18");
+
         }
+
+        public void printObstacleH()
+        {
+            for (int i = 0; i < obstaclesH.Length; i++)
+            {
+                Console.SetCursorPosition(obstaclesH[i].obsPos.X, obstaclesH[i].obsPos.Y);
+                Console.ForegroundColor = obstaclesH[i].color;
+                Console.WriteLine(obstaclesH[i].symbol);
+                obstaclesH[i].obsMovement();
+            }
+        }
+
 
         public void createShape()
         {

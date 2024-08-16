@@ -48,6 +48,10 @@ namespace KGA_OOPConsoleProject.Objects
             game.Reset(this);
         }
 
+        public void obsMovement()
+        {
+            this.obsPos.X += 1;
+        }
         
     }
 }

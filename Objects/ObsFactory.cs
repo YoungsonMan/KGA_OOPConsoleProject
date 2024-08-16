@@ -145,13 +145,12 @@ namespace KGA_OOPConsoleProject.Objects
             if (name == "11")
             {
                 Obstacle obstacleH = new Obstacle();
-                obstacleH.name = "○";
+                obstacleH.symbol = '○';
 
-                Point point = new Point();
-                obsPos.X = 1; obsPos.Y = 1;
-                Console.SetCursorPosition(obsPos.X, obsPos.Y);
-                Console.ForegroundColor = ConsoleColor.Magenta;
-                Console.WriteLine("○");
+
+                obstacleH.obsPos.X = 1;
+                obstacleH.obsPos.Y = 1;
+                obstacleH.color = ConsoleColor.Magenta;
                 Console.ResetColor();
 
                 return obstacleH as T;
@@ -159,27 +158,25 @@ namespace KGA_OOPConsoleProject.Objects
             else if (name == "12")
             {
                 Obstacle obstacleH = new Obstacle();
-                obstacleH.name = "○";
+                obstacleH.symbol = '○';
 
-                Point point = new Point();
-                obsPos.X = 1; obsPos.Y = 3;
-                Console.SetCursorPosition(obsPos.X, obsPos.Y);
-                Console.ForegroundColor = ConsoleColor.Magenta;
-                Console.WriteLine("○");
+                obstacleH.obsPos.X = 1;
+                obstacleH.obsPos.Y = 3;
+                obstacleH.color = ConsoleColor.Magenta;
                 Console.ResetColor();
+
+
 
                 return obstacleH as T;
             }
             else if (name == "13")
             {
                 Obstacle obstacleH = new Obstacle();
-                obstacleH.name = "○";
+                obstacleH.symbol = '○';
 
-                Point point = new Point();
-                obsPos.X = 1; obsPos.Y = 5;
-                Console.SetCursorPosition(obsPos.X, obsPos.Y);
-                Console.ForegroundColor = ConsoleColor.Magenta;
-                Console.WriteLine("○");
+                obstacleH.obsPos.X = 1;
+                obstacleH.obsPos.Y = 5;
+                obstacleH.color = ConsoleColor.Magenta;
                 Console.ResetColor();
 
                 return obstacleH as T;
@@ -187,13 +184,11 @@ namespace KGA_OOPConsoleProject.Objects
             else if (name == "14")
             {
                 Obstacle obstacleH = new Obstacle();
-                obstacleH.name = "○";
+                obstacleH.symbol = '○';
 
-                Point point = new Point();
-                obsPos.X = 1; obsPos.Y = 7;
-                Console.SetCursorPosition(obsPos.X, obsPos.Y);
-                Console.ForegroundColor = ConsoleColor.Magenta;
-                Console.WriteLine("○");
+                obstacleH.obsPos.X = 1;
+                obstacleH.obsPos.Y = 7;
+                obstacleH.color = ConsoleColor.Magenta;
                 Console.ResetColor();
 
                 return obstacleH as T;
@@ -201,13 +196,11 @@ namespace KGA_OOPConsoleProject.Objects
             else if (name == "15")
             {
                 Obstacle obstacleH = new Obstacle();
-                obstacleH.name = "○";
+                obstacleH.symbol = '○';
 
-                Point point = new Point();
-                obsPos.X = 1; obsPos.Y = 9;
-                Console.SetCursorPosition(obsPos.X, obsPos.Y);
-                Console.ForegroundColor = ConsoleColor.Magenta;
-                Console.WriteLine("○");
+                obstacleH.obsPos.X = 1;
+                obstacleH.obsPos.Y = 9;
+                obstacleH.color = ConsoleColor.Magenta;
                 Console.ResetColor();
 
                 return obstacleH as T;
@@ -215,13 +208,11 @@ namespace KGA_OOPConsoleProject.Objects
             else if (name == "16")
             {
                 Obstacle obstacleH = new Obstacle();
-                obstacleH.name = "○";
+                obstacleH.symbol = '○';
 
-                Point point = new Point();
-                obsPos.X = 1; obsPos.Y = 11;
-                Console.SetCursorPosition(obsPos.X, obsPos.Y);
-                Console.ForegroundColor = ConsoleColor.Magenta;
-                Console.WriteLine("○");
+                obstacleH.obsPos.X = 1;
+                obstacleH.obsPos.Y = 11;
+                obstacleH.color = ConsoleColor.Magenta;
                 Console.ResetColor();
 
                 return obstacleH as T;
@@ -229,13 +220,11 @@ namespace KGA_OOPConsoleProject.Objects
             else if (name == "17")
             {
                 Obstacle obstacleH = new Obstacle();
-                obstacleH.name = "○";
+                obstacleH.symbol = '○';
 
-                Point point = new Point();
-                obsPos.X = 1; obsPos.Y = 13;
-                Console.SetCursorPosition(obsPos.X, obsPos.Y);
-                Console.ForegroundColor = ConsoleColor.Magenta;
-                Console.WriteLine("○");
+                obstacleH.obsPos.X = 1;
+                obstacleH.obsPos.Y = 13;
+                obstacleH.color = ConsoleColor.Magenta;
                 Console.ResetColor();
 
                 return obstacleH as T;
