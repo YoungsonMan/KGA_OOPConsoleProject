@@ -3,6 +3,9 @@
     public abstract class Scene
     {
         public Game game;
+        public Information info;
+
+        public ConsoleKey input;
         public Scene(Game game)
         {
             this.game = game;

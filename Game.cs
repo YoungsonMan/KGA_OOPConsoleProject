@@ -41,6 +41,7 @@ namespace KGA_OOPConsoleProject
         }
         public void ChangeScene(SceneType sceneType)
         {
+            previousScene = currentScene;
             currentScene.Exit();
             currentScene = scenes[(int)sceneType];
             currentScene.Enter();
@@ -90,6 +91,7 @@ namespace KGA_OOPConsoleProject
             player = new Player();
             obstacle = new Obstacle();
             printer = new Printer();
+            movement = new Movement();
 
             currentScene = scenes[(int)SceneType.Title];
             currentScene.Enter();

@@ -47,9 +47,12 @@ namespace KGA_OOPConsoleProject.Objects
             shape.symbol = symbol;
             shape.pos.X = randomSpawn.RandomX(2, 17);
             shape.pos.Y = randomSpawn.RandomY(2, 13);
+            Console.SetCursorPosition(shape.pos.X, shape.pos.Y);
+            Console.ForegroundColor = color;
             Console.WriteLine(symbol);
             return shape;
         }
 
     }
 }
+

@@ -15,11 +15,11 @@ namespace KGA_OOPConsoleProject.Functions
         public Game game;
         public Map map;
         
-        public Player Player;
+        public Player player;
         public Printer printer;
         public void Moves()
         {
-            map = new Map();
+
             
             Point next = playerPos;
             switch (input)
@@ -37,10 +37,10 @@ namespace KGA_OOPConsoleProject.Functions
                     next = new Point(playerPos.X + 1, playerPos.Y);
                     break;
             }
-          //  if (map[next.Y, next.X])
-          //  {
-          //      playerPos = next;
-          //  }
+            if (map.map[next.Y, next.X])
+            {
+                playerPos = next;
+            }
          
            
         }

@@ -20,7 +20,7 @@ namespace KGA_OOPConsoleProject.Scenes
         {
 
         }
-        public override void Render()
+        public void infoOut()
         {
             string[] info = new string[20];
             info[0] = ($"┏━━━━━━━━━━주어진  문양━━━━━━━━━━━┓");
@@ -37,7 +37,7 @@ namespace KGA_OOPConsoleProject.Scenes
             info[11] = ($"┃   ←   →     :  이동             ┃");
             info[12] = ($"┃     ↓                           ┃");
             info[13] = ($"┃                                 ┃");
-            info[14] = ($"┃ 굴러오는 방해물을 피해          ┃");
+            info[14] = ($"┃ 굴러오는 장애물을 피해          ┃");
             info[15] = ($"┃ 주어진 문양을 먹고 탈출하세요   ┃");
             info[16] = ($"┃                                 ┃");
             info[17] = ($"┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
@@ -47,26 +47,23 @@ namespace KGA_OOPConsoleProject.Scenes
             {
                 Console.WriteLine(str);
             }
+        }
+        public override void Render()
+        {
 
             Console.Clear();
-            Console.WriteLine($"┏━━━━━━━━━━주어진  문양━━━━━━━━━━━┓");
-            Console.WriteLine($"┃                                 ┃");
-            Console.WriteLine($"┃                ♥                ┃");
-            Console.WriteLine($"┃                                 ┃");
-            Console.WriteLine($"┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine($"┏━━━━━━━━━━플레이  방법━━━━━━━━━━━┓");
-            Console.WriteLine($"┃                                 ┃"); 
-            Console.WriteLine($"┃  [방향키]                       ┃");
-            Console.WriteLine($"┃     ↑                           ┃");
-            Console.WriteLine($"┃   ←   →     :  이동             ┃");
-            Console.WriteLine($"┃     ↓                           ┃");
-            Console.WriteLine($"┃                                 ┃");
-            Console.WriteLine($"┃ 굴러오는 방해물을 피해          ┃");
-            Console.WriteLine($"┃ 주어진 문양을 먹고 탈출하세요   ┃");
-            Console.WriteLine($"┃                                 ┃"); 
-            Console.WriteLine($"┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
+            Console.WriteLine($"┏━━━━━━━━━━━━━━━━━━━━━━게임 소개━━━━━━━━━━━━━━━━━━━━━━┓");
+            Console.WriteLine($"┃                                                     ┃");
+            Console.WriteLine($"┃  본 게임은 로스트아크 군단장레이드 쿠크세이튼       ┃");
+            Console.WriteLine($"┃  2관문 기믹중 하나인 카드미로를 모방한 게임 입니다. ┃");
+            Console.WriteLine($"┃                                                     ┃"); 
+            Console.WriteLine($"┃  방향키를 이용하여 플레이어를 움직이며              ┃");
+            Console.WriteLine($"┃  다가오는 장애물을 피한후                           ┃");
+            Console.WriteLine($"┃  주어진 문양을 3번 먹은후 나오는 탈출구를 찾아      ┃");
+            Console.WriteLine($"┃  문양: ♠ ♥ ♣ ◆   탈출구: G                          ┃");
+            Console.WriteLine($"┃  들어가 탈출을 하면 됩니다.                         ┃");
+            Console.WriteLine($"┃                                                     ┃"); 
+            Console.WriteLine($"┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛");
             Console.WriteLine();
         }
         public override void Input()
