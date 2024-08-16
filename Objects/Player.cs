@@ -62,6 +62,7 @@ namespace KGA_OOPConsoleProject.Objects
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine($"{symbol}");
             Console.ResetColor();
+            Console.SetCursorPosition(1, 1);
         }
 
     }

@@ -25,7 +25,8 @@ namespace KGA_OOPConsoleProject.Scenes
         }
         public override void Enter()
         {
-
+            game.printer.createShape();
+            Console.ResetColor();
         }
         public override void Render()
         {
@@ -36,7 +37,7 @@ namespace KGA_OOPConsoleProject.Scenes
            
             game.printer.printObsH();
 
-            game.printer.createShape();
+            game.printer.printShapes();
             game.player.PrintPlayer();
             PrintInfo();
 

@@ -15,7 +15,7 @@ namespace KGA_OOPConsoleProject.Printers
         public Obstacle Obstacle;
         public ObsFactory ObsFactory;
 
-        public Shape Shape;
+        public Shape[] Shape;
         public ShapeBuilder ShapeBuilder;
 
         private RandomSpawn randomSpawn;
@@ -58,7 +58,7 @@ namespace KGA_OOPConsoleProject.Printers
 
         public void createShape()
         {
-            Shape[] shapes = new Shape[4];
+            Shape = new Shape[4];
             ShapeBuilder spadeBuilder = new ShapeBuilder();
             ShapeBuilder heartBuilder = new ShapeBuilder();
             ShapeBuilder cloverBuilder = new ShapeBuilder();
@@ -71,10 +71,22 @@ namespace KGA_OOPConsoleProject.Printers
             heartBuilder.SetColor(ConsoleColor.Red).SetSymbol('♥');
             cloverBuilder.SetColor(ConsoleColor.Green).SetSymbol('♣');
             diamondBuilder.SetColor(ConsoleColor.Yellow).SetSymbol('◆');
-            shapes[0] = spadeBuilder.Build();
-            shapes[1] = heartBuilder.Build();
-            shapes[2] = cloverBuilder.Build();
-            shapes[3] = diamondBuilder.Build();
+            Shape[0] = spadeBuilder.Build();
+            Shape[1] = heartBuilder.Build();
+            Shape[2] = cloverBuilder.Build();
+            Shape[3] = diamondBuilder.Build();
+        }
+
+
+        public void printShapes()
+        {
+            for (int i = 0; i < Shape.Length; i++)
+            {
+                Console.SetCursorPosition(Shape[i].pos.X, Shape[i].pos.Y);
+                Console.ForegroundColor = Shape[i].color;
+                Console.Write(Shape[i].symbol);
+            }
+
         }
 
 
