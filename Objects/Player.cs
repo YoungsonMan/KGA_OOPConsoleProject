@@ -29,11 +29,11 @@ namespace KGA_OOPConsoleProject.Objects
         public int shapeNumber;
         public Player()  
         {
-            this.game = game; 
-            this.scene = scene;
-            this.map = map;
-            this.movement = movement;
-            this.symbol = new char();
+         //   this.game = game; 
+         //   this.scene = scene;
+         //   this.map = map;
+         //   this.movement = movement;
+         //   this.symbol = new char();
             random = new Random();
             this.shapeNumber = random.Next(1,4);
             if (shapeNumber == 1)

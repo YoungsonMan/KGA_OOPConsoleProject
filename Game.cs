@@ -29,6 +29,7 @@ namespace KGA_OOPConsoleProject
         public Printer printer;
         public Movement movement;
         public Information info;
+        public Shape shape;
         public void Run()
         {
             Console.CursorVisible = false;
@@ -92,6 +93,7 @@ namespace KGA_OOPConsoleProject
             map = new Map();
             player = new Player();
             obstacle = new Obstacle();
+            shape = new Shape();
             printer = new Printer();
             movement = new Movement(this);
             info = new Information(this);

@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using KGA_OOPConsoleProject.Scenes;
+using KGA_OOPConsoleProject.Printers;
+
 
 namespace KGA_OOPConsoleProject.Objects
 {
@@ -20,6 +22,9 @@ namespace KGA_OOPConsoleProject.Objects
         public char symbol;
         public bool removeWhenInteract;
         public int number;
+        public Shape shape;
+        public RandomSpawn randomSpawn;
+
 
         public Shape()
         {
@@ -28,7 +33,6 @@ namespace KGA_OOPConsoleProject.Objects
 
         public void PrintShape()
         {
-            pos.X = 1; pos.Y = 1;
             Console.SetCursorPosition(pos.X, pos.Y);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine();
